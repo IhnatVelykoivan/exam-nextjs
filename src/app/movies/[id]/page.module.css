@@ -1,0 +1,155 @@
+.page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 24px;
+}
+
+.backLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--accent);
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+    transition: opacity 0.2s;
+}
+
+.backLink:hover {
+    opacity: 0.8;
+}
+
+.hero {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 36px;
+}
+
+.posterWrapper {
+    flex-shrink: 0;
+    width: 260px;
+}
+
+.poster {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6);
+}
+
+.noPoster {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+}
+
+.details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--text-primary);
+}
+
+.meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.year {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent);
+    background: rgba(31, 200, 227, 0.1);
+    border: 1px solid rgba(31, 200, 227, 0.3);
+    border-radius: 6px;
+    padding: 3px 10px;
+    letter-spacing: 0.04em;
+}
+
+.votes {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+.ratingRow {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.scoreLabel {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1;
+}
+
+.scoreMax {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.divider {
+    height: 1px;
+    background: var(--border);
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.overview {
+    font-size: 0.97rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 20px;
+        gap: 28px;
+    }
+
+    .posterWrapper {
+        width: 200px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .meta {
+        justify-content: center;
+    }
+
+    .ratingRow {
+        justify-content: center;
+    }
+
+    .genres {
+        justify-content: center;
+    }
+}

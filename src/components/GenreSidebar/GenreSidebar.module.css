@@ -1,0 +1,43 @@
+.sidebar {
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.heading {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.item {
+    display: block;
+    padding: 7px 12px;
+    border-radius: 6px;
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.item:hover {
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+}
+
+.active {
+    background-color: var(--bg-card);
+    color: var(--accent);
+    font-weight: 600;
+    border-left: 3px solid var(--accent);
+    padding-left: 9px;
+}

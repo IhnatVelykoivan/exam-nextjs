@@ -1,0 +1,56 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-primary: #0d1b2a;
+    --bg-secondary: #112240;
+    --bg-card: #162c4a;
+    --accent: #1fc8e3;
+    --accent-hover: #17b0c8;
+    --text-primary: #e8f0fe;
+    --text-secondary: #8899b4;
+    --text-muted: #5a6e8a;
+    --border: #1e3a5f;
+    --star-filled: #FFD700;
+    --star-empty: #3a4e6a;
+    --badge-bg: #1b3a5c;
+    --badge-text: #1fc8e3;
+}
+
+html, body {
+    height: 100%;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+}
+
+input {
+    font-family: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}

@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.filled {
+    color: var(--star-filled);
+    font-size: 1rem;
+}
+
+.empty {
+    color: var(--star-empty);
+    font-size: 1rem;
+}
+
+.score {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.noRating {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
