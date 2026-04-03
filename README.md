@@ -15,7 +15,7 @@ npm install
 Створити файл `.env.local` у корені проєкту з таким вмістом:
 
 ```env
-TMDB_TOKEN=Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0OTEzNTNiMzZiMTBhZDEzZjdiZjEzNzAxYWQxY2JmYiIsIm5iZiI6MTc3MjIwMDAyNS40MzM5OTk4LCJzdWIiOiI2OWExYTA1OWJiYWMwMDQ0OGVlMmUxMWYiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.QwPGvIpa59F2grrvt4nuwiiR-PaeoHrz8v0oHqmpPw0
+TMDB_TOKEN=Bearer your-token......
 ```
 
 > Токен вже вказано вище — просто скопіюйте рядок цілком у `.env.local`. Це токен для перевірки контрольної роботи.
